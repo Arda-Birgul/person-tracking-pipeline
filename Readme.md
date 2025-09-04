@@ -1,5 +1,23 @@
 # Person Tracking Pipeline
 
+[![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://python.org)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/)
+[![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=flat&logo=opencv&logoColor=white)](https://opencv.org/)
+[![YOLO](https://img.shields.io/badge/YOLO-v8-yellow.svg)](https://github.com/ultralytics/ultralytics)
+[![CUDA](https://img.shields.io/badge/CUDA-Compatible-76B900?style=flat&logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-zone)
+[![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+## Dependencies Status
+
+[![ultralytics](https://img.shields.io/badge/ultralytics-%3E%3D8.0.0-blue)](https://pypi.org/project/ultralytics/)
+[![numpy](https://img.shields.io/badge/numpy-%3E%3D1.21.0-blue)](https://pypi.org/project/numpy/)
+[![opencv-python-headless](https://img.shields.io/badge/opencv--python--headless-%3E%3D4.5.0-blue)](https://pypi.org/project/opencv-python-headless/)
+[![requests](https://img.shields.io/badge/requests-%3E%3D2.25.0-blue)](https://pypi.org/project/requests/)
+[![torch](https://img.shields.io/badge/torch-%3E%3D1.9.0-blue)](https://pypi.org/project/torch/)
+[![psutil](https://img.shields.io/badge/psutil-%3E%3D5.8.0-blue)](https://pypi.org/project/psutil/)
+
 An advanced person detection and tracking system using YOLO and optimized tracking algorithms with multi-processing support.
 
 ## Features
@@ -20,6 +38,10 @@ An advanced person detection and tracking system using YOLO and optimized tracki
 
 ## Requirements
 
+[![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macOS-lightgrey)](https://github.com/your-repo)
+[![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue)](https://python.org)
+[![GPU](https://img.shields.io/badge/GPU-CUDA%20Compatible-green?logo=nvidia)](https://developer.nvidia.com/cuda-zone)
+
 - Python 3.7+
 - CUDA-compatible GPU (recommended) or CPU
 - Sufficient RAM for video processing
@@ -33,6 +55,8 @@ pip install ultralytics numpy opencv-python-headless requests torch psutil
 ```
 
 ## Installation
+
+[![Install](https://img.shields.io/badge/Install-Instructions-blue)](#installation)
 
 1. Clone the repository:
 ```bash
@@ -121,6 +145,8 @@ python person_tracker.py \
 
 ## Command Line Options
 
+[![CLI](https://img.shields.io/badge/CLI-Options-orange)](#command-line-options)
+
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
 | `--no-install` | flag | False | Skip automatic package installation |
@@ -175,6 +201,8 @@ project-root/
 
 ## Supported Video Formats
 
+[![Video Formats](https://img.shields.io/badge/Video%20Formats-MP4%20%7C%20WebM%20%7C%20AVI%20%7C%20MOV%20%7C%20MKV%20%7C%20M4V-blue)](https://opencv.org)
+
 - MP4 (`.mp4`)
 - WebM (`.webm`)
 - AVI (`.avi`)
@@ -198,6 +226,8 @@ Frame/Remaining // ID // Status // Confidence%
 
 ## Performance Optimization
 
+[![Performance](https://img.shields.io/badge/Performance-Optimized-green)](#performance-optimization)
+
 ### Auto-tuning
 The system automatically determines optimal worker count based on:
 - Available CPU cores
@@ -213,6 +243,8 @@ The system automatically determines optimal worker count based on:
 4. **Accuracy Priority**: Use smaller detection intervals (1-2 frames)
 
 ## Troubleshooting
+
+[![Support](https://img.shields.io/badge/Support-Available-brightgreen)](#troubleshooting)
 
 ### Common Issues
 
@@ -232,7 +264,6 @@ python person_tracker.py --detect-interval 5 --workers 2
 ```bash
 # Install packages manually
 pip install ultralytics numpy opencv-python-headless requests torch psutil
-python person_tracker.py --no-install
 ```
 
 **Model Loading Error**:
@@ -253,6 +284,9 @@ python person_tracker.py --model yolov8n.pt
 
 ## Contributing
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Contributors](https://img.shields.io/github/contributors/your-username/your-repo.svg)](https://github.com/your-username/your-repo/graphs/contributors)
+
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
@@ -261,9 +295,15 @@ python person_tracker.py --model yolov8n.pt
 
 ## License
 
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
+
+[![YOLOv8](https://img.shields.io/badge/Powered%20by-YOLOv8-yellow)](https://github.com/ultralytics/ultralytics)
+[![OpenCV](https://img.shields.io/badge/Built%20with-OpenCV-blue)](https://opencv.org/)
+[![PyTorch](https://img.shields.io/badge/Built%20with-PyTorch-red)](https://pytorch.org/)
 
 - [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) for object detection
 - OpenCV for computer vision operations
